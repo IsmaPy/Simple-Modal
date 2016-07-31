@@ -3,28 +3,43 @@
 
 
 /*MODAL*/
-	.modal{width:100%; height:100%; position: fixed; top:0; left:0; background:rgba(0,0,0,0.8); z-index:-1; opacity:0; transition:all 0.35s ease-in-out 0.45s;}
-	.modal.active{opacity:1; z-index:999; transition:all 0.35s ease-in-out 0s;}
+.modal{width:100%; height:100%; position: fixed; top:0; left:0; background:rgba(0,0,0,0.8); z-index:-1; opacity:0; transition:all 0.35s ease-in-out 0.45s;}
+.modal.active{opacity:1; z-index:999; transition:all 0.35s ease-in-out 0s;}
+
+	
+	/*GENERICS*/
+
+		/*Box*/
+		.modal .box{position:absolute; left:0; right:0;  margin:auto 0; background:#FFFFFF; border-radius:1px;}/*Basics properties*/
+
+		/*Box Size*/
+		.modal .box.your_class{width:400px; height:200px;}/*In 'your_class' put the width and height to indicate the size of the box*/
+
+		/*Center Box*/
+		.modal.center .box{top:0; bottom:0; margin:auto;}
+
+		/*Top Box*/
+		.modal.top .box{top:50px; margin:0 auto;}/*Adjust the top of your choosing*/
 
 		/*Btn Close*/
 		.modal .box .btn_close{width:20px; height:20px; position:absolute; top:0; right:-25px; background: url('../../images/close.svg') no-repeat 3px 1px; background-size:15px auto; font-size:0;}
+		.modal .box .btn_close:hover{transform:rotate(-180deg); transform-origin:center;}
 
-		/*Modal Size*/
-		.modal .box.your_class{width:400px; height:200px;}/*in 'your_class' put the width and height to indicate the size of the box*/
-
-		/*ANIMATIONS*/
+	/*ANIMATIONS*/
 
 		/*Classics*/
-		.modal.center.classic .box{position:absolute; top:-150%; left:0; right:0; bottom:0; margin:auto; background:#FFFFFF; border-radius:1px; transition:all 0.45s ease-in-out 0s;}/*Basics properties*/
-		.modal.center.classic.active .box{top:0; transition:all 0.45s ease-in-out 0s}
-  
-		/*Center Box*/
-		.modal.center .box{position:absolute; top:-150%; left:0; right:0; bottom:0; margin:auto; background:#FFFFFF; border-radius:1px; transition:all 0.45s ease-in-out 0s;}/*Basics properties*/
-		.modal.center.active .box{top:0; transition:all 0.45s ease-in-out 0.45s;}
+		.modal.classic .box{opacity:0; transition:opacity 0.45s ease-in-out 0s;}
+		.modal.classic.active .box{opacity:1; transition:opacity 0.45s ease-in-out 0.45s}
 
-		/*Top Box*/
-		.modal.top .box{position:absolute; top:-150%; left:0; right:0; margin:0 auto; background:#FFFFFF; border-radius:1px; transition:all 0.45s ease-in-out 0s;}/*Basics properties*/
-		.modal.top.active .box{top:50px; transition:all 0.45s ease-in-out 0.45s;}/*Adjust the top of your choosing*/
+		/*Top*/
+		.modal.to_the_top .box{position:absolute; top:-150%; left:0; right:0; bottom:0; margin:auto; background:#FFFFFF; border-radius:1px; transition:all 0.45s ease-in-out 0s;}/*Basics properties*/
+		.modal.to_the_top.active .box{top:0; transition:all 0.45s ease-in-out 0.45s;}
+
+		/*Bottom*/
+		.modal.to_the_bottom .box{position:absolute; top:-150%; left:0; right:0; margin:0 auto; background:#FFFFFF; border-radius:1px; transition:all 0.45s ease-in-out 0s;}/*Basics properties*/
+		.modal.to_the_bottom.active .box{top:50px; transition:all 0.45s ease-in-out 0.45s;}/*Adjust the top of your choosing*/
+	  
+		
 
 
 	
