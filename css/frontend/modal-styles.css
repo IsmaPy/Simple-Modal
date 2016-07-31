@@ -39,6 +39,14 @@
 		/*Bottom*/
 		.modal.to_the_bottom .box{bottom:-150%; top:0; margin:auto; transition:all 0.45s ease-in-out 0s;}
 		.modal.to_the_bottom.active .box{bottom:0; transition:all 0.45s ease-in-out 0.45s;}
+
+		/*Left*/
+		.modal.to_the_left .box{left:-150%; bottom:0; top:0;  margin:auto; transition:all 0.45s ease-in-out 0s;}
+		.modal.to_the_left.active .box{left:0; transition:all 0.45s ease-in-out 0.45s;}
+
+		/*Right*/
+		.modal.to_the_right .box{right:-150%; bottom:0; top:0; margin:auto; transition:all 0.45s ease-in-out 0s;}
+		.modal.to_the_right.active .box{right:0; transition:all 0.45s ease-in-out 0.45s;}
 	  
 		
 

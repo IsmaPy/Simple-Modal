@@ -3,11 +3,11 @@ $(document).ready(function(){
 		/*Action for to close modal*/
 		$('.btn_close').click(function(e) {
 			e.preventDefault();
-			if($('.modal.top, .modal.center, .modal.to_the_top, .modal.to_the_bottom').hasClass('active')){
-				$('.modal.top, .modal.center, .modal.to_the_top, .modal.to_the_bottom').removeClass('active');
+			if($('.modal.top, .modal.center, .modal.to_the_top, .modal.to_the_bottom, .modal.to_the_left, .modal.to_the_right').hasClass('active')){
+				$('.modal.top, .modal.center, .modal.to_the_top, .modal.to_the_bottom, .modal.to_the_left, .modal.to_the_right').removeClass('active');
 			}
 			else{
-				$('.modal.top, .modal.center, .modal.to_the_top, .modal.to_the_bottom').addClass('active');
+				$('.modal.top, .modal.center, .modal.to_the_top, .modal.to_the_bottom, .modal.to_the_left, .modal.to_the_right').addClass('active');
 			}		
 		});
 
@@ -52,6 +52,28 @@ $(document).ready(function(){
 			}
 			else{
 				$('.modal.to_the_bottom').addClass('active');
+			}		
+		});
+
+		/*Action for left modal animation*/
+		$('.btn.left_animation').click(function(e) {
+			e.preventDefault();
+			if($('.modal.to_the_left').hasClass('active')){
+				$('.modal.to_the_left').removeClass('active');
+			}
+			else{
+				$('.modal.to_the_left').addClass('active');
+			}		
+		});
+
+		/*Action for right modal animation*/
+		$('.btn.right_animation').click(function(e) {
+			e.preventDefault();
+			if($('.modal.to_the_right').hasClass('active')){
+				$('.modal.to_the_right').removeClass('active');
+			}
+			else{
+				$('.modal.to_the_right').addClass('active');
 			}		
 		});
 		
