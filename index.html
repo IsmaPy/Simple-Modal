@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Simple Modal</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" />
+
+<link rel="stylesheet" type="text/css" href="css/frontend/html-reset.css" />
+<link rel="stylesheet" type="text/css" href="css/frontend/styles.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="css/frontend/modal-styles.css" media="screen" />
+
+<script src="js/frontend/lib/jquery/jquery-3.1.0.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		
+		/*Action for to close modal*/
+		$('.btn_close').click(function(e) {
+			e.preventDefault();
+			if($('.modal.top, .modal.center').hasClass('active')){
+				$('.modal.top, .modal.center').removeClass('active');
+			}
+			else{
+				$('.modal.top, .modal.center').addClass('active');
+			}		
+		});
+
+		/*Action for top modal*/
+		$('.btn.top').click(function(e) {
+			e.preventDefault();
+			if($('.modal.top').hasClass('active')){
+				$('.modal.top').removeClass('active');
+			}
+			else{
+				$('.modal.top').addClass('active');
+			}		
+		});
+
+		/*Action for center modal*/
+		$('.btn.center').click(function(e) {
+			e.preventDefault();
+			if($('.modal.center').hasClass('active')){
+				$('.modal.center').removeClass('active');
+			}
+			else{
+				$('.modal.center').addClass('active');
+			}		
+		});
+		
+	});
+</script>
+</head>
+
+<body>
+
+<section class="center_content">
+	<!--Buttons-->
+	<ul class="content_buttons">
+		<li>
+			<a href="javascript:void(0)" class="btn center">Open Modal Center</a>
+		</li>
+		<li>
+			<a href="javascript:void(0)" class="btn top">Open Modal Top</a>
+		</li>
+	</ul>
+</section>
+
+<!--Simple Modal | Center Box-->
+<div class="modal center"><!--"active" to show the modal-->
+	<div class="box your_class">
+		<a href="javascript:void(0)" class="btn_close">Close</a>
+	</div>
+</div>
+
+<!--Simple Modal | Top Box-->
+<div class="modal top"><!--"active" to show the modal-->
+	<div class="box your_class">
+		<a href="javascript:void(0)" class="btn_close">Close</a>
+	</div>
+</div>
+
+</body>
+</html>
