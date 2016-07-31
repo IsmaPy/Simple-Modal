@@ -12,6 +12,12 @@
 		/*Modal Size*/
 		.modal .box.your_class{width:400px; height:200px;}/*in 'your_class' put the width and height to indicate the size of the box*/
 
+		/*ANIMATIONS*/
+
+		/*Classics*/
+		.modal.center.classic .box{position:absolute; top:-150%; left:0; right:0; bottom:0; margin:auto; background:#FFFFFF; border-radius:1px; transition:all 0.45s ease-in-out 0s;}/*Basics properties*/
+		.modal.center.classic.active .box{top:0; transition:all 0.45s ease-in-out 0s}
+  
 		/*Center Box*/
 		.modal.center .box{position:absolute; top:-150%; left:0; right:0; bottom:0; margin:auto; background:#FFFFFF; border-radius:1px; transition:all 0.45s ease-in-out 0s;}/*Basics properties*/
 		.modal.center.active .box{top:0; transition:all 0.45s ease-in-out 0.45s;}

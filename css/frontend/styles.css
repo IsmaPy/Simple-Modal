@@ -13,11 +13,30 @@ a{text-decoration:none; -webkit-transition: all 0.3s ease-in-out; -moz-transitio
 
 header, section, article, aside, footer, div{box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; position:relative;}
 
-.center_content{width:990px; margin:0 auto;}	
+	/*FONTS*/
+	@font-face {
+	    font-family: 'aaarghnormal';
+	    src: url('fonts/Aaargh-webfont.eot');
+	    src: url('fonts/Aaargh-webfont.eot?#iefix') format('embedded-opentype'),
+	         url('fonts/Aaargh-webfont.woff') format('woff'),
+	         url('fonts/Aaargh-webfont.ttf') format('truetype'),
+	         url('fonts/Aaargh-webfont.svg#aaarghnormal') format('svg');
+	    font-weight: normal;
+	    font-style: normal;
 
+	}
+
+	/*CONTENT*/
+	.center_content{width:990px; margin:0 auto;}	
+
+	h1,
+	h2{display:block; font-family:'aaarghnormal', sans-serif; font-size:2em; color:#FFFFFF; font-weight:400;}
+	h2{font-size:1.5em; margin:50px 0 30px;}
+
+	
 	/*BUTTONS*/
-	.content_buttons{margin:50px 0;}
+	.content_buttons{margin:0 0 30px;}
 	.content_buttons li{display:inline-block;}
-	.content_buttons li .btn{width:200px; height:40px; display:block; background:#39B2DE;  text-align:center; line-height:40px; color:#FFFFFF;}
+	.content_buttons li .btn{width:200px; height:40px; display:block; background:#39B2DE;  text-align:center; line-height:40px; font-family:'aaarghnormal', sans-serif; font-size:1em; color:#FFFFFF;}
 	.content_buttons li .btn:hover{background:#276B82}
 
