@@ -30,13 +30,13 @@ header, section, article, aside, footer, div{box-sizing:border-box; -webkit-box-
 	.center_content{width:990px; margin:0 auto;}	
 
 	h1,
-	h2{display:block; font-family:'aaarghnormal', sans-serif; font-size:2em; color:#FFFFFF; font-weight:400;}
-	h2{font-size:1.5em; margin:50px 0 30px;}
+	h2{display:block;  margin:30px 0; font-family:'aaarghnormal', sans-serif; font-size:2em; color:#FFFFFF; font-weight:400;}
+	h2{font-size:1.5em;}
 
 	
 	/*BUTTONS*/
 	.content_buttons{margin:0 0 30px;}
 	.content_buttons li{display:inline-block;}
-	.content_buttons li .btn{width:200px; height:40px; display:block; background:#39B2DE;  text-align:center; line-height:40px; font-family:'aaarghnormal', sans-serif; font-size:1em; color:#FFFFFF;}
+	.content_buttons li .btn{width:200px; height:50px; display:block; border-radius:1px; background:#39B2DE;  text-align:center; line-height:50px; font-family:'aaarghnormal', sans-serif; font-size:1em; color:#FFFFFF;}
 	.content_buttons li .btn:hover{background:#276B82}
 
