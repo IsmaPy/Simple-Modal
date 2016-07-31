@@ -7,7 +7,7 @@
 	.modal.active{opacity:1; z-index:999; transition:all 0.35s ease-in-out 0s;}
 
 		/*Btn Close*/
-		.modal .box .btn_close{width:20px; height:20px; position:absolute; top:0; right:-25px; background: url('../../img/close.svg') no-repeat 3px 1px; background-size:15px auto; font-size:0;}
+		.modal .box .btn_close{width:20px; height:20px; position:absolute; top:0; right:-25px; background: url('../../images/close.svg') no-repeat 3px 1px; background-size:15px auto; font-size:0;}
 
 		/*Modal Size*/
 		.modal .box.your_class{width:400px; height:200px;}/*in 'your_class' put the width and height to indicate the size of the box*/
