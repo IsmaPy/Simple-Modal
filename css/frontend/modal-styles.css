@@ -13,7 +13,7 @@
 		.modal .box{position:absolute; left:0; right:0;  margin:auto 0; background:#FFFFFF; border-radius:1px;}/*Basics properties*/
 
 		/*Box Size*/
-		.modal .box.your_class{width:400px; height:200px;}/*In 'your_class' put the width and height to indicate the size of the box*/
+		.modal .box.your_class{width:600px; height:300px;}/*In 'your_class' put the width and height to indicate the size of the box*/
 
 		/*Center Box*/
 		.modal.center .box{top:0; bottom:0; margin:auto;}
@@ -33,12 +33,12 @@
 		.modal.classic.active .box{opacity:1; transition:opacity 0.45s ease-in-out 0.45s}
 
 		/*Top*/
-		.modal.to_the_top .box{position:absolute; top:-150%; left:0; right:0; bottom:0; margin:auto; background:#FFFFFF; border-radius:1px; transition:all 0.45s ease-in-out 0s;}/*Basics properties*/
+		.modal.to_the_top .box{top:-150%; bottom:0; margin:auto; transition:all 0.45s ease-in-out 0s;}
 		.modal.to_the_top.active .box{top:0; transition:all 0.45s ease-in-out 0.45s;}
 
 		/*Bottom*/
-		.modal.to_the_bottom .box{position:absolute; top:-150%; left:0; right:0; margin:0 auto; background:#FFFFFF; border-radius:1px; transition:all 0.45s ease-in-out 0s;}/*Basics properties*/
-		.modal.to_the_bottom.active .box{top:50px; transition:all 0.45s ease-in-out 0.45s;}/*Adjust the top of your choosing*/
+		.modal.to_the_bottom .box{bottom:-150%; top:0; margin:auto; transition:all 0.45s ease-in-out 0s;}
+		.modal.to_the_bottom.active .box{bottom:0; transition:all 0.45s ease-in-out 0.45s;}
 	  
 		
 

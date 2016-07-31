@@ -11,44 +11,8 @@
 <link rel="stylesheet" type="text/css" href="css/frontend/modal-styles.css" media="screen" />
 
 <script src="js/frontend/lib/jquery/jquery-3.1.0.min.js" type="text/javascript"></script>
-<script type="text/javascript">
-	$(document).ready(function(){
-		
-		/*Action for to close modal*/
-		$('.btn_close').click(function(e) {
-			e.preventDefault();
-			if($('.modal.top, .modal.center').hasClass('active')){
-				$('.modal.top, .modal.center').removeClass('active');
-			}
-			else{
-				$('.modal.top, .modal.center').addClass('active');
-			}		
-		});
+<script src="js/frontend/frontend.js" type="text/javascript"></script>
 
-		/*Action for top modal*/
-		$('.btn.top').click(function(e) {
-			e.preventDefault();
-			if($('.modal.top').hasClass('active')){
-				$('.modal.top').removeClass('active');
-			}
-			else{
-				$('.modal.top').addClass('active');
-			}		
-		});
-
-		/*Action for center modal*/
-		$('.btn.center').click(function(e) {
-			e.preventDefault();
-			if($('.modal.center').hasClass('active')){
-				$('.modal.center').removeClass('active');
-			}
-			else{
-				$('.modal.center').addClass('active');
-			}		
-		});
-		
-	});
-</script>
 </head>
 
 <body>
@@ -56,7 +20,7 @@
 <section class="center_content">
 	<h1>Simple Modal</h1>
 	<article>
-		<h2>Classics Modals</h2>
+		<h2>Classic</h2>
 		<!--Buttons-->
 		<ul class="content_buttons">
 			<li>
@@ -67,6 +31,32 @@
 			<li>
 				<a href="javascript:void(0)" class="btn top">
 					<span>Open Modal Top</span>
+				</a>
+			</li>
+		</ul>
+	</article>
+	<article>
+		<h2>Diferents Animations</h2>
+		<!--Buttons-->
+		<ul class="content_buttons">
+			<li>
+				<a href="javascript:void(0)" class="btn top_animation">
+					<span>Open Modal Top</span>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:void(0)" class="btn bottom_animation">
+					<span>Open Modal Bottom</span>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:void(0)" class="btn top">
+					<span>Open Modal Left</span>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:void(0)" class="btn top">
+					<span>Open Modal Right</span>
 				</a>
 			</li>
 		</ul>
@@ -82,6 +72,20 @@
 
 <!--Simple Modal | Classic Top Box-->
 <div class="modal top classic"><!--"active" to show the modal-->
+	<div class="box your_class">
+		<a href="javascript:void(0)" class="btn_close">Close</a>
+	</div>
+</div>
+
+<!--Simple Modal | Animation Top Box-->
+<div class="modal to_the_top"><!--"active" to show the modal-->
+	<div class="box your_class">
+		<a href="javascript:void(0)" class="btn_close">Close</a>
+	</div>
+</div>
+
+<!--Simple Modal | Animation Bottom Box-->
+<div class="modal to_the_bottom"><!--"active" to show the modal-->
 	<div class="box your_class">
 		<a href="javascript:void(0)" class="btn_close">Close</a>
 	</div>
