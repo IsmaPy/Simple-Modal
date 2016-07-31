@@ -25,6 +25,7 @@
 		.modal .box .btn_close{width:20px; height:20px; position:absolute; top:0; right:-25px; background: url('../../images/close.svg') no-repeat 3px 1px; background-size:15px auto; font-size:0;}
 		.modal .box .btn_close:hover{transform:rotate(-180deg); transform-origin:center;}
 
+	
 	/*ANIMATIONS*/
 
 		/*Classics*/
