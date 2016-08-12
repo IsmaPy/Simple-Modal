@@ -13,7 +13,7 @@
 		.modal .box{position:absolute; left:0; right:0;  margin:auto 0; background:#FFFFFF; border-radius:1px;}/*Basics properties*/
 
 		/*Box Size*/
-		.modal .box.your_class{width:600px; height:300px;}/*In 'your_class' put the width and height to indicate the size of the box*/
+		.modal .box.your_class{width:600px; height:300px; padding:20px;}/*In 'your_class' put the width and height to indicate the size of the box*/
 
 		/*Center Box*/
 		.modal.center .box{top:0; bottom:0; margin:auto;}
@@ -41,12 +41,29 @@
 		.modal.to_the_bottom.active .box{bottom:0; transition:all 0.45s ease-in-out 0.45s;}
 
 		/*Left*/
-		.modal.to_the_left .box{left:-150%; bottom:0; top:0;  margin:auto; transition:all 0.45s ease-in-out 0s;}
+		.modal.to_the_left .box{left:-200%; bottom:0; top:0;  margin:auto; transition:all 0.45s ease-in-out 0s;}
 		.modal.to_the_left.active .box{left:0; transition:all 0.45s ease-in-out 0.45s;}
 
 		/*Right*/
-		.modal.to_the_right .box{right:-150%; bottom:0; top:0; margin:auto; transition:all 0.45s ease-in-out 0s;}
+		.modal.to_the_right .box{right:-200%; bottom:0; top:0; margin:auto; transition:all 0.45s ease-in-out 0s;}
 		.modal.to_the_right.active .box{right:0; transition:all 0.45s ease-in-out 0.45s;}
+
+
+	/*RESPONSIVE*/
+
+	/*Media Query Mobile General*/
+	@media (max-width: 800px) {
+		
+		/*Box Size*/
+		.modal .box.your_class{width:auto; height:200px; margin:auto 30px;}
+
+		/*Left*/
+		.modal.to_the_left .box{width:300px; margin:auto;}
+
+		/*Right*/
+		.modal.to_the_right .box{width:300px; margin:auto;}
+	
+	}
 	  
 		
 
