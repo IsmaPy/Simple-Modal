@@ -32,21 +32,41 @@
 		.modal.classic .box{opacity:0; transition:opacity 0.45s ease-in-out 0s;}
 		.modal.classic.active .box{opacity:1; transition:opacity 0.45s ease-in-out 0.45s}
 
-		/*Top*/
-		.modal.to_the_top .box{top:-150%; bottom:0; margin:auto; transition:all 0.45s ease-in-out 0s;}
-		.modal.to_the_top.active .box{top:0; transition:all 0.45s ease-in-out 0.45s;}
+		/*Slide Movement*/
 
-		/*Bottom*/
-		.modal.to_the_bottom .box{bottom:-150%; top:0; margin:auto; transition:all 0.45s ease-in-out 0s;}
-		.modal.to_the_bottom.active .box{bottom:0; transition:all 0.45s ease-in-out 0.45s;}
+			/*Top*/
+			.modal.to_the_top .box{top:-150%; bottom:0; margin:auto; transition:all 0.45s ease-in-out 0s;}
+			.modal.to_the_top.active .box{top:0; transition:all 0.45s ease-in-out 0.45s;}
 
-		/*Left*/
-		.modal.to_the_left .box{left:-200%; bottom:0; top:0;  margin:auto; transition:all 0.45s ease-in-out 0s;}
-		.modal.to_the_left.active .box{left:0; transition:all 0.45s ease-in-out 0.45s;}
+			/*Bottom*/
+			.modal.to_the_bottom .box{bottom:-150%; top:0; margin:auto; transition:all 0.45s ease-in-out 0s;}
+			.modal.to_the_bottom.active .box{bottom:0; transition:all 0.45s ease-in-out 0.45s;}
 
-		/*Right*/
-		.modal.to_the_right .box{right:-200%; bottom:0; top:0; margin:auto; transition:all 0.45s ease-in-out 0s;}
-		.modal.to_the_right.active .box{right:0; transition:all 0.45s ease-in-out 0.45s;}
+			/*Left*/
+			.modal.to_the_left .box{left:-200%; bottom:0; top:0;  margin:auto; transition:all 0.45s ease-in-out 0s;}
+			.modal.to_the_left.active .box{left:0; transition:all 0.45s ease-in-out 0.45s;}
+
+			/*Right*/
+			.modal.to_the_right .box{right:-200%; bottom:0; top:0; margin:auto; transition:all 0.45s ease-in-out 0s;}
+			.modal.to_the_right.active .box{right:0; transition:all 0.45s ease-in-out 0.45s;}
+
+		/*Bounce Movement*/
+		
+			/*Top*/
+			.modal.to_the_top_bounce .box{top:-150%; bottom:0; margin:auto; transition:all 0.7s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s;}
+			.modal.to_the_top_bounce.active .box{top:0; transition:all 0.7s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0.45s;}
+
+			/*Bottom*/
+			.modal.to_the_bottom_bounce .box{bottom:-150%; top:0; margin:auto; transition:all 0.7s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s;}
+			.modal.to_the_bottom_bounce.active .box{bottom:0; transition:all 0.7s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0.45s;}
+
+			/*Left*/
+			.modal.to_the_left_bounce .box{left:-200%; bottom:0; top:0;  margin:auto; transition:all 0.7s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s;}
+			.modal.to_the_left_bounce.active .box{left:0; transition:all 0.7s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0.45s;}
+
+			/*Right*/
+			.modal.to_the_right_bounce .box{right:-200%; bottom:0; top:0; margin:auto; transition:all 0.7s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s;}
+			.modal.to_the_right_bounce.active .box{right:0; transition:all 0.7s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0.45s;}
 
 
 	/*RESPONSIVE*/
@@ -58,10 +78,12 @@
 		.modal .box.your_class{width:auto; height:200px; margin:auto 30px;}
 
 		/*Left*/
-		.modal.to_the_left .box{width:300px; margin:auto;}
+		.modal.to_the_left .box,
+		.modal.to_the_left_bounce .box{width:300px; margin:auto;}
 
 		/*Right*/
-		.modal.to_the_right .box{width:300px; margin:auto;}
+		.modal.to_the_right .box,
+		.modal.to_the_right_bounce .box{width:300px; margin:auto;}
 	
 	}
 	  

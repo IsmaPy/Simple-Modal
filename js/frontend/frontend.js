@@ -3,11 +3,11 @@ $(document).ready(function(){
 		/*Action for to close modal*/
 		$('.btn_close').click(function(e) {
 			e.preventDefault();
-			if($('.modal.top, .modal.center, .modal.to_the_top, .modal.to_the_bottom, .modal.to_the_left, .modal.to_the_right').hasClass('active')){
-				$('.modal.top, .modal.center, .modal.to_the_top, .modal.to_the_bottom, .modal.to_the_left, .modal.to_the_right').removeClass('active');
+			if($('.top, .center, .to_the_top, .to_the_bottom, .to_the_left, .to_the_right, .to_the_top_bounce, .to_the_bottom_bounce, .to_the_left_bounce, .to_the_right_bounce').hasClass('active')){
+				$('.top, .center, .to_the_top, .to_the_bottom, .to_the_left, .to_the_right, .to_the_top_bounce, .to_the_bottom_bounce, .to_the_left_bounce, .to_the_right_bounce').removeClass('active');
 			}
 			else{
-				$('.modal.top, .modal.center, .modal.to_the_top, .modal.to_the_bottom, .modal.to_the_left, .modal.to_the_right').addClass('active');
+				$('.top, .center, .to_the_top, .to_the_bottom, .to_the_left, .to_the_right, .to_the_top_bounce, .to_the_bottom_bounce, .to_the_left_bounce, .to_the_right_bounce').addClass('active');
 			}		
 		});
 
@@ -74,6 +74,50 @@ $(document).ready(function(){
 			}
 			else{
 				$('.modal.to_the_right').addClass('active');
+			}		
+		});
+
+		/*Action for top modal animation Bounce*/
+		$('.btn.top_animation_bounce').click(function(e) {
+			e.preventDefault();
+			if($('.modal.to_the_top_bounce').hasClass('active')){
+				$('.modal.to_the_top_bounce').removeClass('active');
+			}
+			else{
+				$('.modal.to_the_top_bounce').addClass('active');
+			}		
+		});
+
+		/*Action for bottom modal animation Bounce*/
+		$('.btn.bottom_animation_bounce').click(function(e) {
+			e.preventDefault();
+			if($('.modal.to_the_bottom_bounce').hasClass('active')){
+				$('.modal.to_the_bottom_bounce').removeClass('active');
+			}
+			else{
+				$('.modal.to_the_bottom_bounce').addClass('active');
+			}		
+		});
+
+		/*Action for left modal animation Bounce*/
+		$('.btn.left_animation_bounce').click(function(e) {
+			e.preventDefault();
+			if($('.modal.to_the_left_bounce').hasClass('active')){
+				$('.modal.to_the_left_bounce').removeClass('active');
+			}
+			else{
+				$('.modal.to_the_left_bounce').addClass('active');
+			}		
+		});
+
+		/*Action for right modal animation Bounce*/
+		$('.btn.right_animation_bounce').click(function(e) {
+			e.preventDefault();
+			if($('.modal.to_the_right_bounce').hasClass('active')){
+				$('.modal.to_the_right_bounce').removeClass('active');
+			}
+			else{
+				$('.modal.to_the_right_bounce').addClass('active');
 			}		
 		});
 		
