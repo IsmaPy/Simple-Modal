@@ -38,9 +38,11 @@ header, section, article, aside, footer, div{box-sizing:border-box; -webkit-box-
 	.center_content{width:990px; margin:0 auto;}
 	.center_content article{margin:30px 0;}
 
-	.link{display:block; text-align:center; font-family: 'aaarghnormal', sans-serif; color:#FFFFFF; margin:20px 0;}
+	.link{display:block; text-align:center; font-family:'aaarghnormal', sans-serif; color:#FFFFFF; margin:20px 0;}
 	.link:hover{color:rgba(255,255,255,0.7)}
 	
+	p{display:block; font-family:'aaarghnormal', sans-serif; font-size:0.813em; color:#1A1A1A; margin:20px 0 0;}
+
 	/*BUTTONS*/
 	.content_buttons{margin:0 0 30px;}
 	.content_buttons li{width:20%; display:inline-block;}

@@ -12,6 +12,8 @@
 
 <script src="js/frontend/lib/jquery/jquery-3.1.0.min.js" type="text/javascript"></script>
 <script src="js/frontend/frontend.js" type="text/javascript"></script>
+<!--Javascript to resize height overlay modal-->
+<script src="js/frontend/resize.js" type="text/javascript"></script>
 
 </head>
 
@@ -91,7 +93,22 @@
 			</li>
 		</ul>
 	</article>
+	<!--Classic with scroll overlay "when the content exceeds the browser height"-->
+	<article>
+		<h2>Overlay scroll</h2>
+		<!--Buttons-->
+		<ul class="content_buttons">
+			<li>
+				<a href="javascript:void(0)" class="btn top_animation_resize">
+					<span>Open Modal Resize</span>
+				</a>
+			</li>
+		</ul>
+	</article>
 </section>
+
+
+<!--MODALS-->
 
 <!--Simple Modal | Classic Center Box-->
 <div class="modal center classic"><!--"active" to show the modal-->
@@ -101,6 +118,7 @@
 		<h3>Your content here</h3>
 	</div>
 </div>
+
 
 <!--Simple Modal | Classic Top Box-->
 <div class="modal top classic"><!--"active" to show the modal-->
@@ -180,6 +198,22 @@
 		<a href="javascript:void(0)" class="btn_close">Close</a>
 		<!--Content-->
 		<h3>Your content here</h3>
+	</div>
+</div>
+
+<!--Simple Modal | Classic Top Box "Overlay resize"-->
+<div id="modal" class="modal top_resize classic"><!--"active" to show the modal-->
+	<div class="box your_class">
+		<a href="javascript:void(0)" class="btn_close">Close</a>
+		<!--Content-->
+		<h3>Your content here</h3>
+		<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+		<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+		<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+		<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+		<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+		<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+		<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
 	</div>
 </div>
 

@@ -26,6 +26,11 @@
 		.modal .box .btn_close:hover{transform:rotate(-180deg); transform-origin:center;}
 
 	
+	/*RESIZE HEIGHT*/
+	.modal.top_resize{overflow-y:scroll; padding: 0 0 50px;}
+	.modal.top_resize .box.your_class{width:600px; height:auto; top:50px; margin:0 auto; padding:20px;}
+
+	
 	/*ANIMATIONS*/
 
 		/*Classics*/

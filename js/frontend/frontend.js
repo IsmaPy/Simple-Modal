@@ -3,11 +3,11 @@ $(document).ready(function(){
 		/*Action for to close modal*/
 		$('.btn_close').click(function(e) {
 			e.preventDefault();
-			if($('.top, .center, .to_the_top, .to_the_bottom, .to_the_left, .to_the_right, .to_the_top_bounce, .to_the_bottom_bounce, .to_the_left_bounce, .to_the_right_bounce').hasClass('active')){
-				$('.top, .center, .to_the_top, .to_the_bottom, .to_the_left, .to_the_right, .to_the_top_bounce, .to_the_bottom_bounce, .to_the_left_bounce, .to_the_right_bounce').removeClass('active');
+			if($('.top, .center, .to_the_top, .to_the_bottom, .to_the_left, .to_the_right, .to_the_top_bounce, .to_the_bottom_bounce, .to_the_left_bounce, .to_the_right_bounce, .top_resize').hasClass('active')){
+				$('.top, .center, .to_the_top, .to_the_bottom, .to_the_left, .to_the_right, .to_the_top_bounce, .to_the_bottom_bounce, .to_the_left_bounce, .to_the_right_bounce, .top_resize').removeClass('active');
 			}
 			else{
-				$('.top, .center, .to_the_top, .to_the_bottom, .to_the_left, .to_the_right, .to_the_top_bounce, .to_the_bottom_bounce, .to_the_left_bounce, .to_the_right_bounce').addClass('active');
+				$('.top, .center, .to_the_top, .to_the_bottom, .to_the_left, .to_the_right, .to_the_top_bounce, .to_the_bottom_bounce, .to_the_left_bounce, .to_the_right_bounce, .top_resize').addClass('active');
 			}		
 		});
 
@@ -119,6 +119,18 @@ $(document).ready(function(){
 			else{
 				$('.modal.to_the_right_bounce').addClass('active');
 			}		
+		});
+
+		/*Action for top modal animation Resize height*/
+		$('.btn.top_animation_resize').click(function(e) {
+			e.preventDefault();
+			if($('.modal.top_resize').hasClass('active')){
+				$('.modal.top_resize').removeClass('active');
+			}
+			else{
+				$('.modal.top_resize').addClass('active');
+			}
+			$("html, body").animate({scrollTop: 0}, 500);		
 		});
 		
 	});
